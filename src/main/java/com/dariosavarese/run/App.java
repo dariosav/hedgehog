@@ -2,9 +2,9 @@ package com.dariosavarese.run;
 
 import java.io.IOException;
 import java.text.MessageFormat;
-import java.util.Arrays;
 
 import com.dariosavarese.HedgehogProblemSolver;
+import com.dariosavarese.TreeZone;
 
 public class App {
 
@@ -16,7 +16,7 @@ public class App {
 
 		// load garden plan
 	
-		HedgehogProblemSolver app = new HedgehogProblemSolver( Arrays.asList());
+		HedgehogProblemSolver app = new HedgehogProblemSolver( new TreeZone[3][3]);
 
 		// calc solution
 		
