@@ -26,14 +26,12 @@ public class HedgeogSolutionTest {
     
     @Test
     public void getSolutionTest55() {
-    	TreeZone[][] garden = new TreeZone[5][5];
+    	TreeZone[][] garden = new TreeZone[3][5];
     	garden[0] = new TreeZone []{new TreeZone(1),new TreeZone(2),new TreeZone(3),new TreeZone(4),new TreeZone(5)};
     	garden[1] = new TreeZone []{new TreeZone(1),new TreeZone(2),new TreeZone(3),new TreeZone(4),new TreeZone(5)};
     	garden[2] = new TreeZone []{new TreeZone(1),new TreeZone(2),new TreeZone(3),new TreeZone(4),new TreeZone(5)};
-    	garden[3] = new TreeZone []{new TreeZone(1),new TreeZone(2),new TreeZone(3),new TreeZone(4),new TreeZone(5)};
-    	garden[4] = new TreeZone []{new TreeZone(1),new TreeZone(2),new TreeZone(3),new TreeZone(4),new TreeZone(5)};
 		HedgehogProblemSolver hedgehogSolution = new HedgehogProblemSolver(garden);
-    	Assert.assertEquals(35, hedgehogSolution.getSolution());
+    	Assert.assertEquals(25, hedgehogSolution.getSolution());
     }
 
     @Test
@@ -46,7 +44,7 @@ public class HedgeogSolutionTest {
 		HedgehogProblemSolver hedgehogSolution = new HedgehogProblemSolver(garden);
     	Assert.assertEquals(10, hedgehogSolution.getSolution());
     }
-    
+
 }
 
 

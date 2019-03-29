@@ -1,7 +1,6 @@
 package com.dariosavarese;
 
 import java.text.MessageFormat;
-import java.util.Objects;
 
 import org.apache.log4j.Logger;
 
@@ -19,7 +18,7 @@ public class HedgehogProblemSolver {
 	}
 
 	private int getAppleNumber(int i, int j) {
-		if(this.garden.length == 0 || this.garden[0].length == 0 || this.garden[0].length != this.garden.length ){
+		if(this.garden.length == 0 || this.garden[0].length == 0 ){
 			return 0;
 		}
 			
